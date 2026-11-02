@@ -55,7 +55,7 @@ def build() -> str:
     # Rechts: Terminal
     tx, ty, tw, th = 700, 52, 448, 236
     body.append(f'<g class="fu" style="--d:.3s">'
-                f'<rect x="{tx}" y="{ty}" width="{tw}" height="{th}" rx="16" fill="#12051d" fill-opacity=".86" '
+                f'<rect x="{tx}" y="{ty}" width="{tw}" height="{th}" rx="16" fill="#061a2b" fill-opacity=".86" '
                 f'stroke="{brand.VIOLET_SOFT}" stroke-opacity=".35"/>'
                 f'<path d="M{tx} {ty + 40}h{tw}" stroke="#ffffff" stroke-opacity=".08"/>'
                 + ''.join(f'<circle cx="{tx + 24 + k * 20}" cy="{ty + 20}" r="6" fill="{c}"/>'
@@ -76,7 +76,7 @@ def build() -> str:
                     + F400.text(cmd, 21, tx + 24 + F400.measure('$ ', 21), y, defs=defs, attrs='fill="#ffffff"')
                     + '</g>')
         t += dur + 0.25
-        color = '#5eead4' if out.endswith('live') else '#cdbbe9'
+        color = '#5eead4' if out.endswith('live') else '#b9dcf2'
         body.append(F400.text(out, 19, tx + 24, y + 28, defs=defs,
                               attrs=f'class="fade" style="--d:{t:.2f}s" fill="{color}"'))
         t += 0.45
@@ -90,7 +90,7 @@ def build() -> str:
                 f'fill="{brand.VIOLET_SOFT}"/></g>')
 
     d = (f'<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{brand.PURPLE}"/>'
-         f'<stop offset="1" stop-color="#14001f"/></linearGradient>'
+         f'<stop offset="1" stop-color="#03121f"/></linearGradient>'
          f'<radialGradient id="gl"><stop offset="0" stop-color="{brand.VIOLET}" stop-opacity=".45"/>'
          f'<stop offset="1" stop-color="{brand.VIOLET}" stop-opacity="0"/></radialGradient>'
          f'<pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">'

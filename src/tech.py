@@ -50,13 +50,13 @@ THEMES = {
     'light': {
         'r1_fill': brand.LAVENDER_PALE, 'r1_stroke': brand.LAVENDER, 'r1_text': brand.PURPLE,
         'dot': brand.VIOLET,
-        'r2_fill': '#ffffff', 'r2_stroke': brand.LAVENDER, 'r2_text': '#3d2a55',
+        'r2_fill': '#ffffff', 'r2_stroke': brand.LAVENDER, 'r2_text': '#173a55',
         'bg': brand.GITHUB_LIGHT_BG,
     },
     'dark': {
-        'r1_fill': '#1f0d30', 'r1_stroke': '#3d2459', 'r1_text': brand.LAVENDER_LIGHT,
-        'dot': '#a78bfa',
-        'r2_fill': '#120a1c', 'r2_stroke': '#2d1a42', 'r2_text': '#cdbbe9',
+        'r1_fill': '#0c2236', 'r1_stroke': '#1e4a6e', 'r1_text': brand.LAVENDER_LIGHT,
+        'dot': '#5cc8f5',
+        'r2_fill': '#08131d', 'r2_stroke': '#123150', 'r2_text': '#b9dcf2',
         'bg': brand.GITHUB_DARK_BG,
     },
 }

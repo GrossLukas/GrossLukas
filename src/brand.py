@@ -17,16 +17,16 @@ ASSETS = os.path.join(ROOT, 'assets')
 with open(os.path.join(HERE, 'brand', 'brand.json'), encoding='utf-8') as fh:
     _BRAND = json.load(fh)
 
-# Markenfarben (aus bw.tech)
-PURPLE = '#370051'        # Primär: Hintergrund Profilbild, Überschriften Website
-PURPLE_DEEP = '#22002f'   # abgedunkelt für Verläufe
-VIOLET = '#731AF1'        # Akzent (Website-Akzent, Zitatzeichen)
-VIOLET_SOFT = '#9b5cf6'   # aufgehellter Akzent für dunkle Flächen
-LAVENDER = '#E3D6F7'      # helle Fläche
-LAVENDER_LIGHT = '#F1EAFB'
-LAVENDER_PALE = '#F5F2FA'
+# Farben: Blau/Türkis (Namen aus dem übernommenen Baukasten)
+PURPLE = '#0a2a4a'        # Primär: Hintergrund Profilbild, Überschriften Website
+PURPLE_DEEP = '#04141f'   # abgedunkelt für Verläufe
+VIOLET = '#0a6fb3'        # Akzent (Website-Akzent, Zitatzeichen)
+VIOLET_SOFT = '#38bdf8'   # aufgehellter Akzent für dunkle Flächen
+LAVENDER = '#cdeaf7'      # helle Fläche
+LAVENDER_LIGHT = '#e6f6fc'
+LAVENDER_PALE = '#f0f9fd'
 WHITE = '#ffffff'
-INK = '#1f1530'           # Fließtext auf hell
+INK = '#0f1e2e'           # Fließtext auf hell
 
 # GitHub-Seitenhintergründe – für Kontrastprüfungen
 GITHUB_LIGHT_BG = '#ffffff'

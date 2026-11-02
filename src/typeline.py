@@ -57,13 +57,13 @@ BLINK_ON = 0.4
 THEMES = {
     'light': {
         'bg': brand.GITHUB_LIGHT_BG,
-        'prefix': '#5d5270',          # gedämpftes Lila-Grau
+        'prefix': '#4a5d70',          # gedämpftes Lila-Grau
         'term': brand.VIOLET,
     },
     'dark': {
         'bg': brand.GITHUB_DARK_BG,
-        'prefix': '#b3a7c8',
-        'term': '#a78bfa',
+        'prefix': '#a7bccb',
+        'term': '#5cc8f5',
     },
 }
 
