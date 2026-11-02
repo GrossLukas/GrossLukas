@@ -41,7 +41,7 @@ def build() -> str:
                           attrs=f'class="fu" style="--d:.05s" fill="{brand.LAVENDER}"'))
     body.append(F700.text('Lukas Gross', 76, 60, 170, defs=defs, letter_spacing=-1,
                           attrs='class="fu" style="--d:.2s" fill="#fff"'))
-    body.append(F400.text('Full-Stack-Entwickler aus Deutschland', 26, 64, 214, defs=defs,
+    body.append(F400.text('Full-Stack-Entwickler', 26, 64, 214, defs=defs,
                           attrs=f'class="fu" style="--d:.4s" fill="{brand.LAVENDER}"'))
     x = 64
     for i, p in enumerate(PILLS):
@@ -97,7 +97,7 @@ def build() -> str:
          f'<circle cx="2" cy="2" r="1.2" fill="#fff" fill-opacity=".14"/></pattern>'
          f'<clipPath id="clip"><rect width="{W}" height="{H}" rx="{R}"/></clipPath>')
     return brand.svg_doc(W, H, ''.join(body), title='Lukas Gross – Full-Stack-Entwickler',
-                         desc='Hallo, ich bin Lukas Gross, Full-Stack-Entwickler aus Deutschland. Web &amp; Mobile, '
+                         desc='Hallo, ich bin Lukas Gross, Full-Stack-Entwickler. Web &amp; Mobile, '
                               'Cloud &amp; Backend, Windows &amp; .NET. Daneben ein Terminal mit whoami, ls ~/projekte '
                               '(cloud, web, mobile, windows) und git push.',
                          css=''.join(css), defs=d + defs.render())
