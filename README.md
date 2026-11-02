@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/ascii-portrait.svg" width="49%" alt="Foto von Lukas Gross im Terminal – baut sich erst als ASCII-Bild auf">
+  <img src="assets/ascii-portrait.svg" width="49%" alt="ASCII-Porträt von Lukas Gross im Terminal">
   <img src="assets/neofetch.svg" width="49%" alt="Steckbrief im Terminal: Rolle Full-Stack-Entwickler; Erfahrung 4+ Jahre; Frontend TypeScript, React, Next.js; Mobile React Native, Expo, Swift, Kotlin; Backend Node.js, PHP, C# und .NET; Daten MariaDB, PostgreSQL, SQLite; Infra Docker, nginx, Linux; CI/CD GitHub Actions, Playwright; KI Claude, Codex, LLMs; Editor VS Code.">
 </p>
 
