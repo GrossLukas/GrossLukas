@@ -37,35 +37,35 @@ Turniere finden und buchen, Turnierbäume automatisch erzeugen, Teams und Freund
 
 | Projekt | Worum es geht | Stack |
 |---|---|---|
-| **owncloud.online** | Cloud-Plattform für Dateien, Freigaben und Zusammenarbeit | PHP · JavaScript |
-| **Desktop-Client** | Dateien zwischen Server und Rechner synchron halten | C++ |
-| **iOS- & Android-App** | Dateien unterwegs ansehen, teilen und hochladen | Swift · Kotlin |
+| **Cloud-Plattform** | Dateien speichern, teilen und gemeinsam bearbeiten | PHP · JavaScript |
+| **Sync-Client** | Dateien zwischen Server und Rechner synchron halten | C++ |
+| **Mobile Apps** | Dateien unterwegs ansehen, teilen und hochladen | Swift · Kotlin |
 | **Outlook-Add-in** | Dateien direkt aus Outlook teilen | C# |
-| **BWTalk** | Chat, Video- und Audiokonferenzen | JavaScript |
-| **MCP-Connector** | KI-Assistenten an die Cloud anbinden | PHP |
+| **Konferenz-App** | Chat, Video- und Audiokonferenzen | JavaScript |
+| **KI-Schnittstelle** | KI-Assistenten an die Cloud anbinden | PHP |
 | **Kundenportal** | Self-Service und Bestellung für Kunden | Vue · PHP |
-| **Manager & Monitoring** | Instanzen verwalten und überwachen | Python |
-| **Marktplatz & Doku** | App-Marktplatz und Dokumentation | PHP · JavaScript |
+| **Instanz-Verwaltung** | Instanzen verwalten und überwachen | Python |
+| **App-Marktplatz & Doku** | App-Marktplatz und Dokumentation | PHP · JavaScript |
 
 #### 🌐 Web-Apps
 
 | Projekt | Worum es geht | Stack |
 |---|---|---|
-| **Workspace** | Aufgaben, Wiki und Service Desk – gemeinsam in Echtzeit bearbeiten | Next.js · Prisma · Yjs |
+| **Team-Workspace** | Aufgaben, Wiki und Service Desk – gemeinsam in Echtzeit bearbeiten | Next.js · Prisma · Yjs |
 | **Terminbuchung** | Online-Termine buchen und verwalten | Next.js · Prisma |
 | **Angebote & Aufträge** | Angebote schreiben, Aufträge verfolgen | Svelte · SQLite |
 | **CRM · Controlling · Verwaltung** | Kunden, Zahlen und Abläufe im Blick | TypeScript · React |
-| **Wärmepumpen-Bedarfstool** | Bedarf berechnen, passende Geräte finden | Blazor |
+| **Bedarfsrechner** | Bedarf berechnen, passende Geräte finden | Blazor |
 
 #### 🪟 Windows & .NET
 
 | Projekt | Worum es geht | Stack |
 |---|---|---|
-| **MailWorker** | PDFs aus Postfächern automatisch einsammeln und zusammenführen | C# · Windows-Dienst |
-| **Metadaten-Verarbeiter** | Dateien annehmen, auslesen und ablegen | C# · Windows-Dienst |
-| **SignMaster Pro** | PDF-Dokumente signieren | .NET 8 · WinForms |
-| **FileContentSearcher** | Schnelle Volltextsuche in Ordnern | C# · WinForms |
-| **XRechnung-Viewer** | E-Rechnungen lesbar machen | C# |
+| **Postfach-Automatisierung** | PDFs aus Postfächern automatisch einsammeln und zusammenführen | C# · Windows-Dienst |
+| **Dokumenten-Verarbeitung** | Dateien annehmen, auslesen und ablegen | C# · Windows-Dienst |
+| **PDF-Signatur** | PDF-Dokumente signieren | .NET 8 · WinForms |
+| **Volltextsuche** | Schnelle Volltextsuche in Ordnern | C# · WinForms |
+| **E-Rechnungs-Viewer** | E-Rechnungen lesbar machen | C# |
 
 ## 🛠️ Stack
 
