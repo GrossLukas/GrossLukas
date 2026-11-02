@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/hero.svg" width="100%" alt="Hallo, ich bin Lukas Gross – Full-Stack-Entwickler. Web & Mobile, Cloud & Backend, Windows & .NET.">
+  <img src="assets/hero.svg" width="100%" alt="Hey, ich bin Lukas Gross – Full-Stack-Entwickler. Web & Mobile, Cloud & Backend, Windows & .NET.">
 </p>
 
 <p align="center">
@@ -11,13 +11,13 @@
 
 ### Über mich
 
-Ich bin Lukas, Full-Stack-Entwickler.
-Ich baue Software vom Datenbankschema bis zur fertigen App und bringe sie selbst in Betrieb: Cloud-Plattformen, Web-Apps, Mobile-Apps und Windows-Dienste.
+Hey, ich bin Lukas – Full-Stack-Entwickler.
+Ich mag es, Ideen von null bis live selbst umzusetzen: Datenbank, Backend, Web-App, Mobile-App, Server. Alles aus einer Hand.
 
-- Von der Datenbank bis zur App: Backend, Web, Mobile und Windows
-- Software nicht nur bauen, sondern auch betreiben: Server, Deployment, Monitoring
-- KI gehört fest zu meinem Werkzeugkasten: Ich entwickle mit KI-Assistenten wie Claude und Codex, binde Sprachmodelle in eigene Anwendungen ein und bleibe bei neuen Werkzeugen am Ball
-- Gern bei: sauberem Code, durchdachten Oberflächen und Lösungen, die im Alltag wirklich helfen
+- Ich baue Web-Apps, Mobile-Apps, Backends und Windows-Tools
+- Ich kümmere mich auch um den Betrieb: Server, Deployment, Monitoring
+- Ich arbeite jeden Tag mit KI, z. B. mit Claude und Codex, und baue KI auch in eigene Apps ein
+- Mir wichtig: sauberer Code, Oberflächen, die Spaß machen, und Lösungen, die wirklich was bringen
 
 ## Tourneo
 
@@ -27,12 +27,12 @@ Ich baue Software vom Datenbankschema bis zur fertigen App und bringe sie selbst
   </a>
 </p>
 
-Turniere finden und buchen, Turnierbäume automatisch erzeugen, Teams und Freunde, Mitgliedschaften mit Stripe, Push-Nachrichten – DSGVO-konform und Deutsch zuerst.
+Meine eigene App für Padel-Turniere: Turniere finden und buchen, Turnierbäume werden automatisch erstellt, dazu Teams, Freunde, Mitgliedschaften und Push-Nachrichten.
 **React Native · Expo Router · TypeScript · Zustand · Node.js/Express · Knex · MariaDB · Stripe · Firebase**
 
 ## Side Projects
 
-Eigene Ideen, mit denen ich neue Technik ausprobiere. Die Repositories sind privat.
+Eigene Ideen, an denen ich rumbaue und neue Sachen ausprobiere. Die Repos sind privat – hier steht, was sie können.
 
 <!-- Neues Projekt: <details>-Block kopieren und anpassen -->
 <details>

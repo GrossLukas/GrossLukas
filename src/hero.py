@@ -37,7 +37,7 @@ def build() -> str:
         f'<rect x=".75" y=".75" width="{W - 1.5}" height="{H - 1.5}" rx="{R}" fill="none" stroke="#ffffff" stroke-opacity=".08"/>',
     ]
     # Links: Name, Rolle, Pillen
-    body.append(F500.text('Hallo, ich bin', 26, 64, 92, defs=defs,
+    body.append(F500.text('Hey, ich bin', 26, 64, 92, defs=defs,
                           attrs=f'class="fu" style="--d:.05s" fill="{brand.LAVENDER}"'))
     body.append(F700.text('Lukas Gross', 76, 60, 170, defs=defs, letter_spacing=-1,
                           attrs='class="fu" style="--d:.2s" fill="#fff"'))
@@ -97,7 +97,7 @@ def build() -> str:
          f'<circle cx="2" cy="2" r="1.2" fill="#fff" fill-opacity=".14"/></pattern>'
          f'<clipPath id="clip"><rect width="{W}" height="{H}" rx="{R}"/></clipPath>')
     return brand.svg_doc(W, H, ''.join(body), title='Lukas Gross – Full-Stack-Entwickler',
-                         desc='Hallo, ich bin Lukas Gross, Full-Stack-Entwickler. Web &amp; Mobile, '
+                         desc='Hey, ich bin Lukas Gross, Full-Stack-Entwickler. Web &amp; Mobile, '
                               'Cloud &amp; Backend, Windows &amp; .NET. Daneben ein Terminal mit whoami, ls ~/projekte '
                               '(cloud, web, mobile, windows) und git push.',
                          css=''.join(css), defs=d + defs.render())
