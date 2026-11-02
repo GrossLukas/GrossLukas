@@ -5,7 +5,7 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/typing-dark.svg">
-    <img src="assets/typing-light.svg" width="100%" alt="Ich baue Cloud-Plattformen, Web-Apps mit Next.js, iOS- und Android-Apps, Windows-Dienste in .NET, sichere Backends und Tools, die Arbeit sparen.">
+    <img src="assets/typing-light.svg" width="100%" alt="Ich baue Cloud-Plattformen, Web-Apps mit Next.js, iOS- und Android-Apps, Windows-Dienste in .NET, sichere Backends, KI-gestützte Lösungen und Tools, die Arbeit sparen.">
   </picture>
 </p>
 
@@ -172,7 +172,7 @@ Die Repositories sind privat – zum Aufklappen, was die Projekte können.
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/tech-dark.svg">
-    <img src="assets/tech-light.svg" width="100%" alt="Stack: TypeScript, React, Next.js, React Native, Expo, Svelte, Vue, Node.js, PHP 8.4, C# und .NET 8, Blazor, Python, Swift, Kotlin, C++ sowie Prisma, MariaDB, SQLite, Redis, Tailwind CSS, Docker, nginx, Linux, Playwright, Vitest, Stripe, OpenID Connect, LDAP, Yjs, GitHub Actions und CheckMK.">
+    <img src="assets/tech-light.svg" width="100%" alt="Stack: TypeScript, React, Next.js, React Native, Expo, Svelte, Vue, Node.js, PHP 8.4, C# und .NET 8, Blazor, Python, Swift, Kotlin, C++ sowie Prisma, MariaDB, SQLite, Redis, Tailwind CSS, Docker, nginx, Linux, Playwright, Vitest, Stripe, OpenID Connect, LDAP, Yjs, GitHub Actions, CheckMK, PostgreSQL, Supabase, Socket.IO, KI-gestützte Entwicklung, LLM-Integration und MCP.">
   </picture>
 </p>
 
