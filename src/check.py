@@ -23,6 +23,8 @@ FORBIDDEN_TAGS = {'script', 'foreignObject', 'image', 'iframe', 'animate', 'anim
                   'animateMotion', 'set'}
 NS = '{http://www.w3.org/2000/svg}'
 TEXT_ALLOWED = {'ascii-portrait.svg'}
+# Eingebettetes Foto (data:-JPEG) – GitHubs CSP lässt data:-Bilder in SVG-Bildern zu (Chromium + WebKit geprüft)
+IMAGE_ALLOWED = {'ascii-portrait.svg'}
 FORBIDDEN_WORDS = [r'\bownCloud\b', r'\bOwnCloud\b']
 
 
@@ -47,12 +49,14 @@ def check(path: str) -> list[str]:
     ids = []
     for el in root.iter():
         tag = el.tag.replace(NS, '')
-        if tag in FORBIDDEN_TAGS:
+        embedded = (tag == 'image' and name in IMAGE_ALLOWED
+                    and any(v.startswith('data:image/') for k, v in el.attrib.items() if k.endswith('href')))
+        if tag in FORBIDDEN_TAGS and not embedded:
             errs.append(f'verbotenes Element <{tag}> (SMIL/Skript/Bild – nur CSS-Animationen erlaubt)')
         for k, v in el.attrib.items():
             if k.lower().startswith('on'):
                 errs.append(f'Event-Handler {k}')
-            if k.endswith('href') and not v.startswith('#'):
+            if k.endswith('href') and not v.startswith('#') and not embedded:
                 errs.append(f'externer Verweis {k}="{v[:60]}"')
         if el.get('id'):
             ids.append(el.get('id'))

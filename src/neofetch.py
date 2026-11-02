@@ -13,10 +13,11 @@ W, H, R = 600, 600, 16
 EASE = 'cubic-bezier(.2,.8,.2,1)'
 MONO, MONO_B = Font('JetBrainsMono', 500), Font('JetBrainsMono', 700)
 SIZE = 17
-LABEL_X, VALUE_X = 28, 28 + 10 * 10.2   # Werte starten nach 10 Zeichen
+LABEL_X, VALUE_X = 28, 28 + 11 * 10.2   # Werte starten nach 11 Zeichen
 # (Bezeichnung, Wert) – neue Zeile einfach anhängen; max. ~40 Zeichen je Wert
 ROWS = [
     ('Rolle', 'Full-Stack-Entwickler'),
+    ('Erfahrung', '4+ Jahre'),
     ('Frontend', 'TypeScript · React · Next.js'),
     ('Mobile', 'React Native · Expo · Swift · Kotlin'),
     ('Backend', 'Node.js · PHP · C# / .NET'),

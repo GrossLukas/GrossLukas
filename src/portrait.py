@@ -1,4 +1,4 @@
-"""ASCII-Porträt im Terminalfenster („./portrait.sh“).
+"""Porträt im Terminalfenster („./portrait.sh“): ASCII baut sich auf, danach erscheint das echte Foto.
 
 Quelle ist das lokale Foto (wird nicht ins Repo gelegt). Ohne Foto bleibt die
 vorhandene assets/ascii-portrait.svg unverändert.
@@ -7,6 +7,8 @@ Aufruf: python src/portrait.py [pfad/zum/foto.jpg]
 """
 from __future__ import annotations
 
+import base64
+import io
 import os
 import sys
 from xml.sax.saxutils import escape
@@ -27,6 +29,9 @@ TEXT_W, TOP, LINE = 425, 64, 13.5
 TEXT_X = (600 - TEXT_W) / 2
 FONT = "ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace"
 EASE = 'cubic-bezier(.2,.8,.2,1)'
+PHOTO_TOP, PHOTO_BOTTOM = 41, H - 49          # zwischen Titelleiste und Eingabezeile
+PHOTO_CROP_W = 1000                            # Ausschnittsbreite im Original, Höhe folgt dem Seitenverhältnis
+PHOTO_CENTER = (626, 990)
 MONO = Font('JetBrainsMono', 500)
 
 
@@ -53,7 +58,20 @@ def ascii_rows(path: str) -> list[str]:
     return rows
 
 
-def build(rows: list[str]) -> str:
+def photo_data_uri(path: str, quality: int = 80) -> str:
+    """Foto als JPEG-Daten-URI, neu kodiert (ohne EXIF/GPS)."""
+    pw, ph = W - 2, PHOTO_BOTTOM - PHOTO_TOP
+    cw = PHOTO_CROP_W
+    ch = round(cw * ph / pw)
+    cx, cy = PHOTO_CENTER
+    im = Image.open(path).convert('RGB').crop((cx - cw // 2, cy - ch // 2, cx + cw // 2, cy + ch // 2))
+    im = im.resize((round(pw * 1.5), round(ph * 1.5)), Image.LANCZOS)
+    buf = io.BytesIO()
+    im.save(buf, 'JPEG', quality=quality, optimize=True, progressive=True)
+    return 'data:image/jpeg;base64,' + base64.b64encode(buf.getvalue()).decode()
+
+
+def build(rows: list[str], photo: str) -> str:
     defs = GlyphDefs('p')
     css = [
         f'.row{{animation:row .5s {EASE} var(--d) both}}@keyframes row{{from{{opacity:0;transform:translateX(-8px)}}}}',
@@ -61,6 +79,13 @@ def build(rows: list[str]) -> str:
         f'@keyframes scan{{from{{transform:translateY(0)}}to{{transform:translateY({H}px);opacity:0}}}}',
         '.fade{animation:fade .4s ease var(--d) both}@keyframes fade{from{opacity:0}}',
         '.cur{animation:blink 1.1s steps(1) infinite}@keyframes blink{50%{opacity:0}}',
+        # Ohne Bewegung (Grundzustand) ist nur das Foto sichtbar
+        '.ascii{opacity:0;animation:asc 3.6s linear both}@keyframes asc{0%,72%{opacity:1}100%{opacity:0}}',
+        '.rv{transform-box:fill-box;transform-origin:top;animation:rv 1.2s ease-in-out 2.6s both}'
+        '@keyframes rv{from{transform:scaleY(0)}}',
+        '.sc2{opacity:0;transform-box:view-box;animation:sc2 1.2s ease-in-out 2.6s both}'
+        f'@keyframes sc2{{0%{{opacity:0;transform:translateY(0)}}6%,94%{{opacity:1}}'
+        f'100%{{opacity:0;transform:translateY({PHOTO_BOTTOM - PHOTO_TOP}px)}}}}',
     ]
     body = [
         f'<rect x=".75" y=".75" width="{W - 1.5}" height="{H - 1.5}" rx="{R}" fill="#08131d" '
@@ -80,7 +105,13 @@ def build(rows: list[str]) -> str:
         text.append(f'<text class="row" style="--d:{.15 + i * .04:.3f}s" x="{TEXT_X}" y="{TOP + i * LINE:.1f}" '
                     f'textLength="{TEXT_W * n / COLS:.1f}" lengthAdjust="spacingAndGlyphs" xml:space="preserve">'
                     f'{escape(line)}</text>')
-    body.append(f'<g font-family="{FONT}" font-size="12" fill="url(#ag)">{"".join(text)}</g>')
+    body.append(f'<g class="ascii" font-family="{FONT}" font-size="12" fill="url(#ag)">{"".join(text)}</g>')
+    # Echtes Foto, wird von oben nach unten „gerendert“
+    body.append(f'<clipPath id="pc"><rect class="rv" x="1" y="{PHOTO_TOP}" width="{W - 2}" '
+                f'height="{PHOTO_BOTTOM - PHOTO_TOP}"/></clipPath>')
+    body.append(f'<image href="{photo}" x="1" y="{PHOTO_TOP}" width="{W - 2}" height="{PHOTO_BOTTOM - PHOTO_TOP}" '
+                f'preserveAspectRatio="xMidYMid slice" clip-path="url(#pc)"/>')
+    body.append(f'<rect class="sc2" x="1" y="{PHOTO_TOP - 2}" width="{W - 2}" height="3" fill="#5eead4"/>')
     body.append(f'<rect class="scan" x="1" y="-40" width="{W - 2}" height="40" fill="url(#sg)"/>')
     # Eingabezeile unten
     py = H - 22
@@ -100,8 +131,9 @@ def build(rows: list[str]) -> str:
          '<stop offset="1" stop-color="#60a5fa"/></linearGradient>'
          '<linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5eead4" stop-opacity="0"/>'
          '<stop offset="1" stop-color="#5eead4" stop-opacity=".22"/></linearGradient>')
-    return brand.svg_doc(W, H, ''.join(body), title='ASCII-Porträt von Lukas Gross',
-                         desc='Terminalfenster mit einem ASCII-Porträt von Lukas Gross, darunter cat name.txt: Lukas Gross.',
+    return brand.svg_doc(W, H, ''.join(body), title='Lukas Gross',
+                         desc='Terminalfenster: ein ASCII-Porträt baut sich auf und wird zum Foto von Lukas Gross. '
+                              'Darunter cat name.txt: Lukas Gross.',
                          css=''.join(css), defs=d + defs.render())
 
 
@@ -109,5 +141,5 @@ if __name__ == '__main__':
     if not os.path.exists(SRC):
         print(f'übersprungen: Foto {SRC} fehlt, ascii-portrait.svg bleibt unverändert')
         sys.exit(0)
-    p = brand.write_asset('ascii-portrait.svg', build(ascii_rows(SRC)))
+    p = brand.write_asset('ascii-portrait.svg', build(ascii_rows(SRC), photo_data_uri(SRC)))
     print('geschrieben', p, os.path.getsize(p))
