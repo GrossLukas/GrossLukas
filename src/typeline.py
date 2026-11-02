@@ -33,6 +33,7 @@ BASELINE = 55            # Versalmitte liegt so bei ~y 42 = optische Zeilenmitte
 PREFIX = 'Ich baue'
 TERMS = [
     'Cloud-Plattformen',
+    'moderne Webseiten',
     'Web-Apps mit Next.js',
     'iOS- & Android-Apps',
     'Windows-Dienste in .NET',

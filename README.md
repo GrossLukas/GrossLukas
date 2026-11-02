@@ -5,7 +5,7 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/typing-dark.svg">
-    <img src="assets/typing-light.svg" width="100%" alt="Ich baue Cloud-Plattformen, Web-Apps mit Next.js, iOS- und Android-Apps, Windows-Dienste in .NET, sichere Backends, KI-gestützte Lösungen und Tools, die Arbeit sparen.">
+    <img src="assets/typing-light.svg" width="100%" alt="Ich baue Cloud-Plattformen, Webseiten, Web-Apps mit Next.js, iOS- und Android-Apps, Windows-Dienste in .NET, sichere Backends, KI-gestützte Lösungen und Tools, die Arbeit sparen.">
   </picture>
 </p>
 
@@ -14,7 +14,7 @@
 Hey, ich bin Lukas – Full-Stack-Entwickler.
 Ich mag es, Ideen von null bis live selbst umzusetzen: Datenbank, Backend, Web-App, Mobile-App, Server. Alles aus einer Hand.
 
-- Ich baue Web-Apps, Mobile-Apps, Backends und Windows-Tools
+- Ich baue Webseiten, Web-Apps, Mobile-Apps, Backends und Windows-Tools
 - Ich kümmere mich auch um den Betrieb: Server, Deployment, Monitoring
 - Ich arbeite jeden Tag mit KI, z. B. mit Claude und Codex, und baue KI auch in eigene Apps ein
 - Mir wichtig: sauberer Code, Oberflächen, die Spaß machen, und Lösungen, die wirklich was bringen
