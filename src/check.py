@@ -22,6 +22,7 @@ MAX_BYTES_HERO = 220_000
 FORBIDDEN_TAGS = {'script', 'foreignObject', 'image', 'iframe', 'animate', 'animateTransform',
                   'animateMotion', 'set'}
 NS = '{http://www.w3.org/2000/svg}'
+TEXT_ALLOWED = {'ascii-portrait.svg'}
 FORBIDDEN_WORDS = [r'\bownCloud\b', r'\bOwnCloud\b']
 
 
@@ -62,7 +63,8 @@ def check(path: str) -> list[str]:
         errs.append('url() mit externer/data-Quelle')
     if '@import' in text or '@font-face' in text:
         errs.append('@import/@font-face nicht erlaubt (Texte als Pfade setzen)')
-    if '<text' in text:
+    # ASCII-Kunst nutzt bewusst Systemschriften (monospace) mit festem textLength
+    if '<text' in text and name not in TEXT_ALLOWED:
         errs.append('<text> gefunden – Texte müssen als Pfade gesetzt sein (textpath.Font.text)')
     has_anim = '@keyframes' in text
     if has_anim and 'prefers-reduced-motion' not in text:

@@ -29,6 +29,7 @@ FONT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fonts')
 
 FAMILIES = {
     'Lexend': 'Lexend[wght].ttf',
+    'JetBrainsMono': 'JetBrainsMono[wght].ttf',
 }
 
 

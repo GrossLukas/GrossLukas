@@ -9,7 +9,12 @@
   </picture>
 </p>
 
-### Über mich
+<p align="center">
+  <img src="assets/ascii-portrait.svg" width="49%" alt="ASCII-Porträt von Lukas Gross im Terminal">
+  <img src="assets/neofetch.svg" width="49%" alt="Steckbrief im Terminal: Rolle Full-Stack-Entwickler; Frontend TypeScript, React, Next.js; Mobile React Native, Expo, Swift, Kotlin; Backend Node.js, PHP, C# und .NET; Daten MariaDB, PostgreSQL, SQLite; Infra Docker, nginx, Linux; CI/CD GitHub Actions, Playwright; KI Claude, Codex, LLMs; Editor VS Code.">
+</p>
+
+## <samp>~/über-mich</samp>
 
 Ich mag es, Ideen von null bis live selbst umzusetzen: Datenbank, Backend, Web-App, Mobile-App, Server. Alles aus einer Hand.
 
@@ -18,7 +23,7 @@ Ich mag es, Ideen von null bis live selbst umzusetzen: Datenbank, Backend, Web-A
 - Ich arbeite jeden Tag mit KI, z. B. mit Claude und Codex, und baue KI auch in eigene Apps ein
 - Mir wichtig: sauberer Code, Oberflächen, die Spaß machen, und Lösungen, die wirklich was bringen
 
-## Tourneo
+## <samp>~/tourneo</samp>
 
 <p align="center">
   <a href="https://github.com/GrossLukas/tourneo">
@@ -29,7 +34,7 @@ Ich mag es, Ideen von null bis live selbst umzusetzen: Datenbank, Backend, Web-A
 Meine eigene App für Padel-Turniere: Turniere finden und buchen, Turnierbäume werden automatisch erstellt, dazu Teams, Freunde, Mitgliedschaften und Push-Nachrichten.
 **React Native · Expo Router · TypeScript · Zustand · Node.js/Express · Knex · MariaDB · Firebase**
 
-## Side Projects
+## <samp>~/side-projects</samp>
 
 Eigene Ideen, an denen ich rumbaue und neue Sachen ausprobiere. Die Repos sind privat – hier steht, was sie können.
 
@@ -123,7 +128,7 @@ Eigene Ideen, an denen ich rumbaue und neue Sachen ausprobiere. Die Repos sind p
 <sub>C# · .NET 8 · Blazor</sub>
 </details>
 
-## Weitere Projekte
+## <samp>~/weitere-projekte</samp>
 
 #### Cloud & Plattform
 
@@ -149,7 +154,7 @@ Eigene Ideen, an denen ich rumbaue und neue Sachen ausprobiere. Die Repos sind p
 | **Volltextsuche** | Schnelle Volltextsuche in Ordnern | C# · WinForms |
 | **E-Rechnungs-Viewer** | E-Rechnungen lesbar machen | C# |
 
-## Stack
+## <samp>~/stack</samp>
 
 <p align="center">
   <picture>
