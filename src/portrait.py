@@ -15,7 +15,7 @@ from xml.sax.saxutils import escape
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import numpy as np  # noqa: E402
-from PIL import Image, ImageFilter, ImageOps  # noqa: E402
+from PIL import Image, ImageEnhance, ImageFilter, ImageOps  # noqa: E402
 
 import brand  # noqa: E402
 from textpath import Font, GlyphDefs  # noqa: E402
@@ -24,8 +24,7 @@ SRC = sys.argv[1] if len(sys.argv) > 1 else r'C:\Users\l.gross\Downloads\Lukas.J
 CROP = (245, 620, 1075, 1560)          # Kopf und Hals im Originalfoto (830 x 940)
 COLS, ROWS = 96, 57                    # Zellen 4,5 x 8,55 – passt zum Seitenverhältnis des Ausschnitts
 RAMP = " .,:;i1tfLCG08@"              # dunkel -> hell
-# Helligkeitsstufen -> Türkistöne (dunkle Zeichen gedämpft, helle Zeichen leuchtend)
-SHADES = ('#16455a', '#2582a6', '#38bdf8', '#9be2ff', '#ffffff')
+COLORS = 28                            # Farben je Zeichen aus dem Foto, auf eine Palette reduziert
 W, H, R = 600, 600, 16
 TEXT_W, TOP, LINE = 432, 56, 8.55
 TEXT_X = (W - TEXT_W) / 2
@@ -60,6 +59,11 @@ def ascii_cells(path: str) -> tuple[list[list[tuple[str, int]]], list[str]]:
     tone = ((lum - lo) / (hi - lo)).clip(0, 1) ** 1.5
     g = Image.fromarray((tone * 255).astype('uint8')).resize((COLS, ROWS), Image.BOX)
     a = alpha.resize((COLS, ROWS), Image.BOX)
+    # Zeichenfarbe: Fotofarbe, etwas gesättigter und aufgehellt (dunkler Terminal-Hintergrund)
+    col = ImageEnhance.Brightness(ImageEnhance.Color(color.resize((COLS, ROWS), Image.BOX)).enhance(1.25)).enhance(1.35)
+    pal = col.quantize(colors=COLORS, method=Image.Quantize.MEDIANCUT)
+    rgbpal = pal.getpalette()[:COLORS * 3]
+    palette = ['#%02x%02x%02x' % tuple(rgbpal[i * 3:i * 3 + 3]) for i in range(COLORS)]
     rows = []
     for y in range(ROWS):
         row = []
@@ -70,9 +74,9 @@ def ascii_cells(path: str) -> tuple[list[list[tuple[str, int]]], list[str]]:
                 row.append((' ', 0))
                 continue
             ch = RAMP[min(int(v * len(RAMP)), len(RAMP) - 1)]
-            row.append((ch, min(int(v * len(SHADES)), len(SHADES) - 1)))
+            row.append((ch, pal.getpixel((x, y))))
         rows.append(row)
-    return rows, list(SHADES)
+    return rows, palette
 
 
 def row_svg(cells: list[tuple[str, int]]) -> tuple[str, int]:
