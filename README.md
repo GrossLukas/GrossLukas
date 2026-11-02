@@ -22,12 +22,12 @@ Ich mag es, Ideen von null bis live selbst umzusetzen: Datenbank, Backend, Web-A
 
 <p align="center">
   <a href="https://github.com/GrossLukas/tourneo">
-    <img src="assets/tourneo/showcase.png" width="100%" alt="Tourneo – Padel-Turniere und Sport-Events als iOS-first App: Startseite, Turnierliste und Mitgliedschaften. React Native, Expo, Node.js, MariaDB, Stripe.">
+    <img src="assets/tourneo/showcase.png" width="100%" alt="Tourneo – Padel-Turniere und Sport-Events als iOS-App: Turnierliste, Turnierdetail mit Preisgeld und Turnierbaum. React Native, Expo, TypeScript, Node.js, MariaDB.">
   </a>
 </p>
 
 Meine eigene App für Padel-Turniere: Turniere finden und buchen, Turnierbäume werden automatisch erstellt, dazu Teams, Freunde, Mitgliedschaften und Push-Nachrichten.
-**React Native · Expo Router · TypeScript · Zustand · Node.js/Express · Knex · MariaDB · Stripe · Firebase**
+**React Native · Expo Router · TypeScript · Zustand · Node.js/Express · Knex · MariaDB · Firebase**
 
 ## Side Projects
 
