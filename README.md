@@ -30,115 +30,98 @@ Ich baue Software vom Datenbankschema bis zur fertigen App und bringe sie selbst
 Turniere finden und buchen, Turnierbäume automatisch erzeugen, Teams und Freunde, Mitgliedschaften mit Stripe, Push-Nachrichten – DSGVO-konform und Deutsch zuerst.
 **React Native · Expo Router · TypeScript · Zustand · Node.js/Express · Knex · MariaDB · Stripe · Firebase**
 
-## Eigene Projekte
+## Side Projects
 
-Die Repositories sind privat – zum Aufklappen, was die Projekte können.
+Eigene Ideen, mit denen ich neue Technik ausprobiere. Die Repositories sind privat.
 
 <!-- Neues Projekt: <details>-Block kopieren und anpassen -->
-
 <details>
-<summary><b>Team-Workspace</b> – Arbeitsplattform, die Aufgaben, Wiki, Service Desk und IT-Dokumentation unter einer Anmeldung bündelt.</summary>
+<summary><b>Team-Workspace</b> – Aufgaben, Wiki und Service Desk in einer App.</summary>
 <ul>
-  <li>Boards, Listen, Sprints und Backlog je Bereich</li>
-  <li>Wiki mit Versionen, Entwürfen und gemeinsamem Bearbeiten</li>
-  <li>Service Desk mit Mail-Eingang und Kundenportal</li>
-  <li>Zeiterfassung mit Stoppuhr und wöchentlichen Zeitberichten</li>
-  <li>Inventar mit Rack-Ansicht und IP-Adressverwaltung</li>
+  <li>Boards, Sprints und Backlog</li>
+  <li>Wiki mit Versionen und gemeinsamem Bearbeiten in Echtzeit</li>
+  <li>Service Desk mit Mail-Eingang</li>
+  <li>Zeiterfassung mit Wochenberichten</li>
+  <li>Rechte, Zwei-Faktor und Single Sign-on</li>
 </ul>
-<sub>Next.js 15 · React 19 · TypeScript · Prisma · SQLite · Tailwind CSS</sub>
+<sub>Next.js · React · Prisma · Tailwind CSS</sub>
 </details>
 
 <details>
-<summary><b>Praxissoftware mit Online-Buchung</b> – Praxis- und Buchungssoftware für Physiotherapie mit öffentlicher Terminbuchung, Patientenportal und Praxisverwaltung.</summary>
+<summary><b>Terminbuchung &amp; Kalender</b> – Termine online buchen und im Kalender verwalten.</summary>
 <ul>
-  <li>Online-Buchung mit Echtzeit-Verfügbarkeit und Serienterminen</li>
-  <li>Warteliste bietet frei gewordene Termine automatisch an</li>
-  <li>Patientenportal für Termine, Dokumente und Rechnungen</li>
-  <li>Kalender, Wartezimmer und Tagesliste für die Rezeption</li>
-  <li>Patientenakte mit Anamnese, Verordnungen und Therapieplan</li>
+  <li>Freie Zeiten in Echtzeit</li>
+  <li>Serientermine und Warteliste</li>
+  <li>Tages- und Wochenansicht</li>
+  <li>Zwei-Faktor und Zugriffsprotokoll</li>
 </ul>
-<sub>Next.js 15 · React 19 · TypeScript · Prisma · SQLite · Tailwind CSS</sub>
+<sub>Next.js · React · Prisma · Tailwind CSS</sub>
 </details>
 
 <details>
-<summary><b>Vertriebs-CRM</b> – Webbasiertes CRM für Vertriebsteams mit Kontakten, Deal-Pipeline, Kalender und Team-Chat.</summary>
+<summary><b>CRM mit Echtzeit-Chat</b> – Kontakte, Deals und Termine an einem Ort.</summary>
 <ul>
-  <li>Kontakte und Deals im Kanban-Board</li>
-  <li>Aktivitäten mit Anhängen, Erinnerungen und Erwähnungen</li>
-  <li>Kalender mit Teamansicht, Einladungen und ICS-Feed</li>
-  <li>Team-Chat in Echtzeit mit Kanälen</li>
-  <li>Öffentliche Termin- und Angebotslinks für Kunden</li>
+  <li>Deals im Kanban-Board</li>
+  <li>Kalender mit Einladungen und ICS-Feed</li>
+  <li>Chat in Echtzeit mit Kanälen</li>
+  <li>Push-Benachrichtigungen</li>
 </ul>
-<sub>Node.js · Express · React · Vite · SQLite · Socket.IO</sub>
+<sub>Node.js · Express · React · Socket.IO</sub>
 </details>
 
 <details>
-<summary><b>Controlling für Unternehmen und Vereine</b> – Mandantenfähige Web-Anwendung, die Buchhaltungsexporte einliest und daraus nachvollziehbare Controlling-Auswertungen macht.</summary>
+<summary><b>Finanz-Dashboard</b> – Aus Buchhaltungsexporten nachvollziehbare Auswertungen machen.</summary>
 <ul>
-  <li>BWA-, Bank- und ERP-Exporte importieren</li>
-  <li>Zuordnung auf Kostenarten, Kostenstellen und Kostenträger</li>
-  <li>Budget, Forecast und Szenarien je Periode</li>
-  <li>13-Wochen-Liquiditätsplanung mit Mindestbestand</li>
+  <li>Exporte einlesen und zuordnen</li>
+  <li>Budget, Forecast und Szenarien</li>
+  <li>Liquiditätsplanung über 13 Wochen</li>
   <li>Jede Kennzahl bis zur Einzelbuchung nachvollziehbar</li>
 </ul>
-<sub>TypeScript · React · Vite · Fastify · SQLite · Zod</sub>
+<sub>TypeScript · React · Fastify · Zod</sub>
 </details>
 
 <details>
-<summary><b>Angebotsverfolgung für Handwerksbetriebe</b> – Mandantenfähige Web-Anwendung, mit der Handwerksbetriebe offene Angebote nachfassen und den offenen Umsatz im Blick behalten.</summary>
+<summary><b>Angebote &amp; Wiedervorlagen</b> – Offene Angebote im Blick behalten und rechtzeitig nachfassen.</summary>
 <ul>
-  <li>Angebote per PDF erfassen, Daten werden vorgeschlagen</li>
-  <li>Automatische Wiedervorlagen nach einstellbarem Nachfass-Rhythmus</li>
-  <li>Tagesliste „Heute“ mit Textvorschlag aus Vorlagen</li>
+  <li>PDF einlesen, Daten werden vorgeschlagen</li>
+  <li>Automatische Wiedervorlagen</li>
   <li>Board mit Drag &amp; Drop und Volltextsuche</li>
-  <li>Auswertung mit Monatsbericht und Gewinn-/Verlustgründen</li>
+  <li>Monatsauswertung</li>
 </ul>
-<sub>SvelteKit 2 · Svelte 5 · TypeScript · SQLite · Node.js</sub>
+<sub>SvelteKit · Svelte 5 · TypeScript · SQLite</sub>
 </details>
 
 <details>
-<summary><b>Aufgabenboard für kleine Teams</b> – Schlankes Aufgabenboard, mit dem ein Team Aufgaben in Bereichen plant, verteilt und die Zeit dafür erfasst.</summary>
+<summary><b>Aufgabenboard</b> – Schlankes Board, um Aufgaben zu planen und Zeiten zu erfassen.</summary>
 <ul>
-  <li>Board mit vier Spalten und Drag &amp; Drop</li>
-  <li>Startseite „Für Sie“ mit eigenen Aufgaben</li>
-  <li>Bilder per Drag &amp; Drop oder Einfügen</li>
-  <li>Kommentare und vollständiger Änderungsverlauf</li>
-  <li>Zeiterfassung mit Schätzung, Übersicht und CSV-Export</li>
+  <li>Drag &amp; Drop über vier Spalten</li>
+  <li>Bilder per Einfügen</li>
+  <li>Kommentare und Änderungsverlauf</li>
+  <li>Zeiterfassung mit CSV-Export</li>
 </ul>
-<sub>Next.js 15 · React 19 · TypeScript · Prisma · SQLite · Tailwind CSS</sub>
+<sub>Next.js · React · Prisma · Tailwind CSS</sub>
 </details>
 
 <details>
-<summary><b>Kursplanung &amp; Vertretungen</b> – Mobile App, mit der Kursleitungen und Koordination Kurse, Absagen und Vertretungen über mehrere Standorte organisieren.</summary>
+<summary><b>Kursplanungs-App</b> – Kurse, Absagen und Vertretungen in einer Mobile App.</summary>
 <ul>
-  <li>Kursplan über alle Standorte</li>
-  <li>Absage mit Push an alle Kursleitungen</li>
-  <li>Vertretung per Tipp übernehmen, Koordination bestätigt</li>
-  <li>Warnung bei zu wenigen Anmeldungen</li>
-  <li>Teilnehmerzahl nach dem Kurs als Nachweis</li>
+  <li>Kursplan über mehrere Standorte</li>
+  <li>Absagen mit Push-Nachricht</li>
+  <li>Vertretung per Tipp übernehmen</li>
+  <li>Auswertung mit CSV-Export</li>
 </ul>
-<sub>React Native · Expo · TypeScript · Supabase · PostgreSQL</sub>
+<sub>React Native · Expo · Supabase</sub>
 </details>
 
 <details>
-<summary><b>Bedarfsrechner für Wärmepumpen</b> – Web-Tool, das per Fragebogen den Bedarf für eine Wärmepumpe ermittelt und passende Hersteller vorschlägt.</summary>
+<summary><b>Bedarfsrechner</b> – Per Fragebogen das passende Gerät finden.</summary>
 <ul>
-  <li>Geführter Fragebogen zur Bedarfsanalyse</li>
-  <li>Rangliste der Hersteller nach gewichteten Kriterien</li>
-  <li>Begründung des Ergebnisses mit Punkteaufschlüsselung</li>
-  <li>Technische Daten der Geräte im Vergleich</li>
-  <li>Fragen, Herstellerdaten und Gewichtung selbst pflegen</li>
+  <li>Geführter Fragebogen</li>
+  <li>Rangliste nach gewichteten Kriterien</li>
+  <li>Technische Daten im Vergleich</li>
+  <li>Anmeldung per Single Sign-on</li>
 </ul>
-<sub>C# · .NET 8 · Blazor Server · Entity Framework Core · SQLite</sub>
-</details>
-
-<details>
-<summary><b>Webseiten</b> – Individuelle Webseiten für Unternehmen.</summary>
-<ul>
-  <li>Gestaltung und Umsetzung nach Wunsch</li>
-  <li>Für Handy, Tablet und Desktop</li>
-</ul>
-<sub>HTML · CSS · JavaScript</sub>
+<sub>C# · .NET 8 · Blazor</sub>
 </details>
 
 ## Weitere Projekte
