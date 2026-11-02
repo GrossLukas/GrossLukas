@@ -17,7 +17,7 @@ PILLS = ('Web & Mobile', 'Cloud & Backend', 'Windows & .NET')
 # Terminal: (Prompt-Zeile, Ausgabe)
 LINES = [
     ('whoami', 'lukas – Full-Stack-Entwickler'),
-    ('ls ~/projekte', 'owncloud.online   workspace   tourneo'),
+    ('ls ~/projekte', 'cloud   web   mobile   windows'),
     ('git push origin main', 'fertig – live'),
 ]
 
@@ -99,7 +99,7 @@ def build() -> str:
     return brand.svg_doc(W, H, ''.join(body), title='Lukas Gross – Full-Stack-Entwickler',
                          desc='Hallo, ich bin Lukas Gross, Full-Stack-Entwickler aus Deutschland. Web &amp; Mobile, '
                               'Cloud &amp; Backend, Windows &amp; .NET. Daneben ein Terminal mit whoami, ls ~/projekte '
-                              '(owncloud.online, workspace, tourneo) und git push.',
+                              '(cloud, web, mobile, windows) und git push.',
                          css=''.join(css), defs=d + defs.render())
 
 

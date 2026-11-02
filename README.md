@@ -14,8 +14,8 @@
 Ich bin Lukas, Full-Stack-Entwickler aus Deutschland.
 Ich baue Software vom Datenbankschema bis zur fertigen App und bringe sie selbst in Betrieb: Cloud-Plattformen, Web-Apps, Mobile-Apps und Windows-Dienste.
 
-- 🔭 Gerade dran: eine **Cloud-Plattform** und ein **Workspace** für Aufgaben, Wiki und Service Desk
-- 📱 Eigenes Projekt: **[Tourneo](https://github.com/GrossLukas/tourneo)** – Padel-Turniere als iOS-App
+- 🧱 Von der Datenbank bis zur App: Backend, Web, Mobile und Windows
+- 🚀 Software nicht nur bauen, sondern auch betreiben: Server, Deployment, Monitoring
 - 🤝 Gern bei: sauberem Code, durchdachten Oberflächen und Lösungen, die im Alltag wirklich helfen
 
 ## ⭐ Tourneo
@@ -30,6 +30,8 @@ Turniere finden und buchen, Turnierbäume automatisch erzeugen, Teams und Freund
 **React Native · Expo Router · TypeScript · Zustand · Node.js/Express · Knex · MariaDB · Stripe · Firebase**
 
 ## 🧩 Projekte
+
+<!-- Neues Projekt: eine Zeile in die passende Tabelle: | **Name** | Worum es geht | Stack | -->
 
 #### ☁️ Cloud & Plattform
 
