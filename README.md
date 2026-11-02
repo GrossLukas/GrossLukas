@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/hero.svg" width="100%" alt="Hey, ich bin Lukas Gross – Full-Stack-Entwickler. Web & Mobile, Cloud & Backend, Windows & .NET.">
+  <img src="assets/hero.svg" width="100%" alt="Lukas Gross – Full-Stack-Entwickler. Web & Mobile, Cloud & Backend, Windows & .NET.">
 </p>
 
 <p align="center">
@@ -11,7 +11,6 @@
 
 ### Über mich
 
-Hey, ich bin Lukas – Full-Stack-Entwickler.
 Ich mag es, Ideen von null bis live selbst umzusetzen: Datenbank, Backend, Web-App, Mobile-App, Server. Alles aus einer Hand.
 
 - Ich baue Webseiten, Web-Apps, Mobile-Apps, Backends und Windows-Tools

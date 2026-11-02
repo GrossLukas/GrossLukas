@@ -37,19 +37,17 @@ def build() -> str:
         f'<rect x=".75" y=".75" width="{W - 1.5}" height="{H - 1.5}" rx="{R}" fill="none" stroke="#ffffff" stroke-opacity=".08"/>',
     ]
     # Links: Name, Rolle, Pillen
-    body.append(F500.text('Hey, ich bin', 26, 64, 92, defs=defs,
-                          attrs=f'class="fu" style="--d:.05s" fill="{brand.LAVENDER}"'))
-    body.append(F700.text('Lukas Gross', 76, 60, 170, defs=defs, letter_spacing=-1,
+    body.append(F700.text('Lukas Gross', 80, 60, 148, defs=defs, letter_spacing=-1,
                           attrs='class="fu" style="--d:.2s" fill="#fff"'))
-    body.append(F400.text('Full-Stack-Entwickler', 26, 64, 214, defs=defs,
+    body.append(F400.text('Full-Stack-Entwickler', 28, 64, 196, defs=defs,
                           attrs=f'class="fu" style="--d:.4s" fill="{brand.LAVENDER}"'))
     x = 64
     for i, p in enumerate(PILLS):
         w = F500.measure(p, 20) + 36
         body.append(f'<g class="fu" style="--d:{.6 + i * .1:.2f}s">'
-                    f'<rect x="{x}" y="250" width="{w:.1f}" height="38" rx="19" fill="#ffffff" fill-opacity=".06" '
+                    f'<rect x="{x}" y="232" width="{w:.1f}" height="38" rx="19" fill="#ffffff" fill-opacity=".06" '
                     f'stroke="#ffffff" stroke-opacity=".28"/>'
-                    + F500.text(p, 20, x + 18, 276, defs=defs, attrs=f'fill="{brand.LAVENDER_LIGHT}"') + '</g>')
+                    + F500.text(p, 20, x + 18, 258, defs=defs, attrs=f'fill="{brand.LAVENDER_LIGHT}"') + '</g>')
         x += w + 12
 
     # Rechts: Terminal
@@ -97,7 +95,7 @@ def build() -> str:
          f'<circle cx="2" cy="2" r="1.2" fill="#fff" fill-opacity=".14"/></pattern>'
          f'<clipPath id="clip"><rect width="{W}" height="{H}" rx="{R}"/></clipPath>')
     return brand.svg_doc(W, H, ''.join(body), title='Lukas Gross – Full-Stack-Entwickler',
-                         desc='Hey, ich bin Lukas Gross, Full-Stack-Entwickler. Web &amp; Mobile, '
+                         desc='Lukas Gross, Full-Stack-Entwickler. Web &amp; Mobile, '
                               'Cloud &amp; Backend, Windows &amp; .NET. Daneben ein Terminal mit whoami, ls ~/projekte '
                               '(cloud, web, mobile, windows) und git push.',
                          css=''.join(css), defs=d + defs.render())
