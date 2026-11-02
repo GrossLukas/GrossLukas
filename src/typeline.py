@@ -37,6 +37,7 @@ TERMS = [
     'iOS- & Android-Apps',
     'Windows-Dienste in .NET',
     'sichere Backends',
+    'KI-gestützte Lösungen',
     'Tools, die Arbeit sparen',
 ]
 

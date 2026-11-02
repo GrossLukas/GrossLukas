@@ -30,7 +30,8 @@ LANGUAGES = [
 STANDARDS = [
     'Prisma', 'MariaDB', 'SQLite', 'Redis', 'Tailwind CSS', 'Docker', 'nginx', 'Linux',
     'Playwright', 'Vitest', 'Stripe', 'OpenID Connect', 'LDAP', 'Yjs (Echtzeit)',
-    'GitHub Actions', 'CheckMK',
+    'GitHub Actions', 'CheckMK', 'PostgreSQL', 'Supabase', 'Socket.IO',
+    'KI-gestützte Entwicklung', 'LLM-Integration', 'MCP',
 ]
 
 # Geometrie (viewBox-Einheiten; GitHub verkleinert ca. 0,7-fach)

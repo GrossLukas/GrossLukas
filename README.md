@@ -16,6 +16,7 @@ Ich baue Software vom Datenbankschema bis zur fertigen App und bringe sie selbst
 
 - Von der Datenbank bis zur App: Backend, Web, Mobile und Windows
 - Software nicht nur bauen, sondern auch betreiben: Server, Deployment, Monitoring
+- KI gehört fest zu meinem Werkzeugkasten: Ich entwickle mit KI-Assistenten wie Claude und Codex, binde Sprachmodelle in eigene Anwendungen ein und bleibe bei neuen Werkzeugen am Ball
 - Gern bei: sauberem Code, durchdachten Oberflächen und Lösungen, die im Alltag wirklich helfen
 
 ## Tourneo
@@ -151,6 +152,7 @@ Die Repositories sind privat – zum Aufklappen, was die Projekte können.
 | **Mobile Apps** | Dateien unterwegs ansehen, teilen und hochladen | Swift · Kotlin |
 | **Outlook-Add-in** | Dateien direkt aus Outlook teilen | C# |
 | **Konferenz-App** | Chat, Video- und Audiokonferenzen | JavaScript |
+| **KI-Schnittstelle** | KI-Assistenten an die Cloud anbinden | PHP |
 | **Kundenportal** | Self-Service und Bestellung für Kunden | Vue · PHP |
 | **Instanz-Verwaltung** | Instanzen verwalten und überwachen | Python |
 | **App-Marktplatz & Doku** | App-Marktplatz und Dokumentation | PHP · JavaScript |
