@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/hero.svg" width="100%" alt="Hallo, ich bin Lukas Gross – Full-Stack-Entwickler bei BW.Tech GmbH. Web & Mobile, Cloud & Backend, Windows & .NET.">
+  <img src="assets/hero.svg" width="100%" alt="Hallo, ich bin Lukas Gross – Full-Stack-Entwickler aus Deutschland. Web & Mobile, Cloud & Backend, Windows & .NET.">
 </p>
 
 <p align="center">
@@ -9,19 +9,15 @@
   </picture>
 </p>
 
-<img src="assets/lukas.png" align="right" width="180" alt="Foto von Lukas Gross">
-
 ### 👋 Über mich
 
-Ich bin Lukas, Full-Stack-Entwickler bei der **[BW.Tech GmbH](https://bw.tech)** – *Cloud by Design*.
+Ich bin Lukas, Full-Stack-Entwickler aus Deutschland.
 Ich baue Software vom Datenbankschema bis zur fertigen App und bringe sie selbst in Betrieb: Cloud-Plattformen, Web-Apps, Mobile-Apps und Windows-Dienste.
 
-- 🔭 Gerade dran: **owncloud.online** (Kern, Sicherheit, Releases) und der **BW.Tech Workspace**
+- 🔭 Gerade dran: **owncloud.online** (Kern, Sicherheit, Releases) und ein **Workspace** für Aufgaben, Wiki und Service Desk
 - 📱 Eigenes Projekt: **[Tourneo](https://github.com/GrossLukas/tourneo)** – Padel-Turniere als iOS-App
-- 🏢 Firmenprojekte: **[BWTECH-github](https://github.com/BWTECH-github)** und **[BW-Tech-GmbH](https://github.com/BW-Tech-GmbH)**
+- 🏢 Weitere Projekte: **[BWTECH-github](https://github.com/BWTECH-github)** und **[BW-Tech-GmbH](https://github.com/BW-Tech-GmbH)**
 - 🤝 Gern bei: sauberem Code, durchdachten Oberflächen und Lösungen, die im Alltag wirklich helfen
-
-<br clear="right">
 
 ## ⭐ Tourneo
 
@@ -38,7 +34,7 @@ Turniere finden und buchen, Turnierbäume automatisch erzeugen, Teams und Freund
 
 > Die meisten Repos sind privat (Firmen- und Kundenprojekte). Verlinkt ist, was öffentlich ist.
 
-#### ☁️ Cloud & Plattform – BW.Tech
+#### ☁️ Cloud & Plattform
 
 | Projekt | Worum es geht | Stack |
 |---|---|---|
@@ -56,7 +52,7 @@ Turniere finden und buchen, Turnierbäume automatisch erzeugen, Teams und Freund
 
 | Projekt | Worum es geht | Stack |
 |---|---|---|
-| **BW.Tech Workspace** | Aufgaben, Wiki, Service Desk mit Kundenportal, Inventar und IPAM – gemeinsames Bearbeiten in Echtzeit | Next.js · Prisma · Yjs · Tiptap |
+| **Workspace** | Aufgaben, Wiki, Service Desk mit Kundenportal, Inventar und IPAM – gemeinsames Bearbeiten in Echtzeit | Next.js · Prisma · Yjs · Tiptap |
 | **Online-Terminbuchung** | Buchungssystem für eine Praxis, live im Einsatz | Next.js · Prisma · NextAuth |
 | **Angebote & Aufträge** | Angebote schreiben, Aufträge verfolgen | Svelte · SQLite |
 | **CRM · Controlling · Verwaltung** | Kunden, Zahlen und Abläufe für kleine Unternehmen | TypeScript · React |
@@ -82,5 +78,5 @@ Turniere finden und buchen, Turnierbäume automatisch erzeugen, Teams und Freund
 </p>
 
 <p align="center">
-  <a href="https://bw.tech">bw.tech</a> · <a href="https://github.com/BWTECH-github">BW.Tech auf GitHub</a>
+  <a href="https://www.linkedin.com/in/lukas-gross-498a11266">LinkedIn</a> · <a href="https://github.com/GrossLukas/tourneo">Tourneo</a>
 </p>

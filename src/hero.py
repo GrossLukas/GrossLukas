@@ -16,7 +16,7 @@ F700, F500, F400 = Font('Lexend', 700), Font('Lexend', 500), Font('Lexend', 400)
 PILLS = ('Web & Mobile', 'Cloud & Backend', 'Windows & .NET')
 # Terminal: (Prompt-Zeile, Ausgabe)
 LINES = [
-    ('whoami', 'lukas – Entwickler bei BW.Tech'),
+    ('whoami', 'lukas – Full-Stack-Entwickler'),
     ('ls ~/projekte', 'owncloud.online   workspace   tourneo'),
     ('git push origin main', 'fertig – live'),
 ]
@@ -41,7 +41,7 @@ def build() -> str:
                           attrs=f'class="fu" style="--d:.05s" fill="{brand.LAVENDER}"'))
     body.append(F700.text('Lukas Gross', 76, 60, 170, defs=defs, letter_spacing=-1,
                           attrs='class="fu" style="--d:.2s" fill="#fff"'))
-    body.append(F400.text('Full-Stack-Entwickler bei BW.Tech GmbH', 26, 64, 214, defs=defs,
+    body.append(F400.text('Full-Stack-Entwickler aus Deutschland', 26, 64, 214, defs=defs,
                           attrs=f'class="fu" style="--d:.4s" fill="{brand.LAVENDER}"'))
     x = 64
     for i, p in enumerate(PILLS):
@@ -60,7 +60,7 @@ def build() -> str:
                 f'<path d="M{tx} {ty + 40}h{tw}" stroke="#ffffff" stroke-opacity=".08"/>'
                 + ''.join(f'<circle cx="{tx + 24 + k * 20}" cy="{ty + 20}" r="6" fill="{c}"/>'
                           for k, c in enumerate(('#ff5f57', '#febc2e', '#28c840')))
-                + F400.text('~/bw.tech', 16, tx + tw / 2, ty + 26, anchor='middle', defs=defs,
+                + F400.text('~/lukas', 16, tx + tw / 2, ty + 26, anchor='middle', defs=defs,
                             attrs='fill="#ffffff" fill-opacity=".45"') + '</g>')
     t = 1.0
     y = ty + 78
@@ -96,8 +96,8 @@ def build() -> str:
          f'<pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">'
          f'<circle cx="2" cy="2" r="1.2" fill="#fff" fill-opacity=".14"/></pattern>'
          f'<clipPath id="clip"><rect width="{W}" height="{H}" rx="{R}"/></clipPath>')
-    return brand.svg_doc(W, H, ''.join(body), title='Lukas Gross – Full-Stack-Entwickler bei BW.Tech GmbH',
-                         desc='Hallo, ich bin Lukas Gross, Full-Stack-Entwickler bei BW.Tech GmbH. Web &amp; Mobile, '
+    return brand.svg_doc(W, H, ''.join(body), title='Lukas Gross – Full-Stack-Entwickler',
+                         desc='Hallo, ich bin Lukas Gross, Full-Stack-Entwickler aus Deutschland. Web &amp; Mobile, '
                               'Cloud &amp; Backend, Windows &amp; .NET. Daneben ein Terminal mit whoami, ls ~/projekte '
                               '(owncloud.online, workspace, tourneo) und git push.',
                          css=''.join(css), defs=d + defs.render())
