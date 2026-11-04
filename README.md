@@ -34,6 +34,17 @@ Ich mag es, Ideen von null bis live selbst umzusetzen: Datenbank, Backend, Web-A
 Meine eigene App für Padel-Turniere: Turniere finden und buchen, Turnierbäume werden automatisch erstellt, dazu Teams, Freunde, Mitgliedschaften und Push-Nachrichten.
 **React Native · Expo Router · TypeScript · Zustand · Node.js/Express · Knex · MariaDB · Firebase**
 
+## <samp>~/rechnungswerk</samp>
+
+<p align="center">
+  <a href="https://github.com/GrossLukas/rechnungswerk">
+    <img src="assets/rechnungswerk/showcase.png" width="100%" alt="RechnungsWerk – Web-App für E-Rechnungen: hochgeladene XRechnung in der hellen Ansicht und Rechnungsliste mit Status in der dunklen Ansicht. C#, .NET 10, Blazor, EF Core, SQLite, Docker.">
+  </a>
+</p>
+
+Meine Open-Source-Web-App für E-Rechnungen: XRechnung und ZUGFeRD ansehen, mit dem offiziellen Validator prüfen, selbst erstellen und per Mail verschicken. Läuft selbst gehostet mit Docker.
+**C# · .NET 10 · Blazor · EF Core · SQLite · Docker**
+
 ## <samp>~/side-projects</samp>
 
 Eigene Ideen, an denen ich rumbaue und neue Sachen ausprobiere. Die Repos sind privat – hier steht, was sie können.
@@ -152,7 +163,6 @@ Eigene Ideen, an denen ich rumbaue und neue Sachen ausprobiere. Die Repos sind p
 | **Dokumenten-Verarbeitung** | Dateien annehmen, auslesen und ablegen | C# · Windows-Dienst |
 | **PDF-Signatur** | PDF-Dokumente signieren | .NET 8 · WinForms |
 | **Volltextsuche** | Schnelle Volltextsuche in Ordnern | C# · WinForms |
-| **E-Rechnungs-Viewer** | E-Rechnungen lesbar machen | C# |
 
 ## <samp>~/stack</samp>
 
@@ -164,5 +174,5 @@ Eigene Ideen, an denen ich rumbaue und neue Sachen ausprobiere. Die Repos sind p
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/lukas-gross-498a11266">LinkedIn</a> · <a href="https://github.com/GrossLukas/tourneo">Tourneo</a>
+  <a href="https://www.linkedin.com/in/lukas-gross-498a11266">LinkedIn</a> · <a href="https://github.com/GrossLukas/tourneo">Tourneo</a> · <a href="https://github.com/GrossLukas/rechnungswerk">RechnungsWerk</a>
 </p>
